@@ -147,10 +147,20 @@ def git_last_changed(root: Path, relative_path: str) -> date | None:
     result = subprocess.run(
         ["git", "log", "-1", "--format=%cs", "--", relative_path],
         cwd=root,
-        check=True,
+        check=False,
         capture_output=True,
         text=True,
     )
+    if result.returncode:
+        # A fresh ZIP + git init has no HEAD yet; no historical change exists.
+        # Invalid repositories and repositories with other history still fail.
+        history = subprocess.run(
+            ["git", "rev-list", "--all", "--max-count=1"], cwd=root,
+            check=True, capture_output=True, text=True,
+        )
+        if not history.stdout.strip():
+            return None
+        result.check_returncode()
     value = result.stdout.strip()
     return date.fromisoformat(value) if value else None
 

@@ -9,7 +9,7 @@
     {
       "path": "brain/tools/generate_now.py",
       "source_sha256": "778f5601dbdbdd13ce8deea5f77ee1715c83116ec6178720b08dc1ad2aa54071",
-      "public_sha256": "9a6bbfa35fc2e0a3af9ddba506c08e5d9ec55525a99e81c0dbe1d8ac8e011f2c"
+      "public_sha256": "963e2d9ffacf16e88d1cde1e0370d028835792449715235b5b786e6f16cbf337"
     },
     {
       "path": "brain/tools/check_workspace_layout.py",
