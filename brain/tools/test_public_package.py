@@ -38,7 +38,8 @@ class PublicPackageTests(unittest.TestCase):
             self.assertIn('Fictional draft ready', output)
             self.assertIn('Ask reader to review', output)
             # Reload saved source; changing the view cannot change the Project.
-            (root / 'brain/NOW.md').write_text('wrong view', encoding='utf-8')
+            (root / 'brain/indexes').mkdir(exist_ok=True)
+            (root / 'brain/indexes/NOW.md').write_text('wrong view', encoding='utf-8')
             self.assertEqual('Fictional draft ready', load_project(project).current)
             regenerated = render([load_project(project)], root)
             self.assertEqual(output, regenerated)

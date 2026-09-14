@@ -4,8 +4,8 @@
 
 ## 最初に確認するもの
 
-1. [goal.md](../goal.md)
-2. [`brain/projects/{{SLUG}}.md`](../../../brain/projects/{{SLUG}}.md) の Current / Decisions / Next / Open
+1. [goal.md](goal.md)
+2. [`brain/projects/{{SLUG}}.md`](../../../../brain/projects/{{SLUG}}.md) の Current / Decisions / Next / Open
 3. 必要な場合だけ、このフォルダ内の要約、`01_raw/`、`02_web/`
 
 ## 現在の要約

@@ -6,12 +6,12 @@
 - 決定：単純な文字情報の草案をMarkdownで作る。
 - 理由：この例は見出しと文章だけで成立し、特別な閲覧ソフトを前提にしないため。
 - 見送った案：表計算ブック。計算や集計を必要としないこの例では使わない。
-- 根拠：[サンプルの目的](../goal.md)。この例のために設定した条件。
+- 根拠：[サンプルの目的](../../03_context/docs/goal.md)。この例のために設定した条件。
 - 見直し条件：実利用者が集計・印刷・専用帳票を必要とした場合は別途判断する。
 
 このログには、将来のAIや人間が同じ判断を再現するために必要な理由を残します。再利用価値のある判断が生まれた場合だけ更新し、単なる作業履歴は書きません。
 
-案件のCurrent / Decisions / Next / Openが変わる場合は、[`brain/projects/sample-report.md`](../../../brain/projects/sample-report.md) も更新します。
+案件のCurrent / Decisions / Next / Openが変わる場合は、[`brain/projects/sample-report.md`](../../../../brain/projects/sample-report.md) も更新します。
 
 ## 記録形式
 

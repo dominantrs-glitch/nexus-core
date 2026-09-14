@@ -1,15 +1,13 @@
 {
   "root_files": [
     "README.md",
-    "goal.md",
-    "WORKSPACE_CONTRACT.md",
     ".gitignore",
     ".gitattributes",
     "AGENTS.md"
   ],
   "root_directories": [
     ".github",
-    "03_context",
+    "context",
     "brain",
     "logs",
     "projects",
@@ -18,8 +16,6 @@
   "brain_files": [
     "README.md",
     "AGENTS.md",
-    "NOW.md",
-    "inbox.md",
     "00_このフォルダについて.html"
   ],
   "brain_directories": [
@@ -30,7 +26,8 @@
     "config",
     "tools",
     "templates",
-    "retrieval_eval"
+    "evaluations",
+    "inbox"
   ],
   "project_index_files": [
     "README.md",
@@ -39,8 +36,6 @@
   "project_root_file_patterns": [
     "README.md",
     "AGENTS.md",
-    "goal.md",
-    "MANIFEST.md",
     "00_このフォルダについて.html",
     ".gitignore",
     ".gitattributes"
@@ -57,5 +52,36 @@
     "09_skills"
   ],
   "entrypoints": {},
-  "legacy_directories": {}
+  "legacy_directories": {},
+  "navigation_directories": {
+    "context": [
+      "docs"
+    ],
+    "projects/*/03_context": [
+      "docs",
+      "summaries",
+      "extracted",
+      "normalized",
+      "decisions",
+      "notes",
+      "model"
+    ],
+    "projects/*/07_logs": [
+      "decisions",
+      "completions",
+      "records",
+      "confirmed"
+    ],
+    "logs": [
+      "records",
+      "completions"
+    ]
+  },
+  "navigation_files": [
+    "README.md",
+    "AGENTS.md",
+    "00_このフォルダについて.html",
+    ".gitkeep"
+  ],
+  "existing_project_names": {}
 }

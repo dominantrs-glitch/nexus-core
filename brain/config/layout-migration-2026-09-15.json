@@ -1,0 +1,17 @@
+{
+  "moves": {
+    "03_context/canonical-context.md": "context/docs/canonical-context.md",
+    "WORKSPACE_CONTRACT.md": "context/docs/workspace-contract.md",
+    "brain/NOW.md": "brain/indexes/NOW.md",
+    "brain/inbox.md": "brain/inbox/items.md",
+    "brain/retrieval_eval/README.md": "brain/evaluations/README.md",
+    "brain/retrieval_eval/expected.md": "brain/evaluations/expected.md",
+    "brain/templates/completion-record.md.template": "brain/templates/records/completion-record.md.template",
+    "brain/templates/memory.md.template": "brain/templates/records/memory.md.template",
+    "projects/sample-report/03_context/context.md": "projects/sample-report/03_context/docs/context.md",
+    "projects/sample-report/goal.md": "projects/sample-report/03_context/docs/goal.md",
+    "projects/sample-report/07_logs/decisions.md": "projects/sample-report/07_logs/decisions/record.md",
+    "logs/correction-log.md": "logs/records/correction-log.md"
+  },
+  "note": "Paths before and after this layout migration. Historical source bodies are preserved."
+}

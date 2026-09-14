@@ -2,7 +2,7 @@
 
 このログには、将来のAIや人間が同じ判断を再現するために必要な理由を残します。再利用価値のある判断が生まれた場合だけ更新し、単なる作業履歴は書きません。
 
-案件のCurrent / Decisions / Next / Openが変わる場合は、[`brain/projects/{{SLUG}}.md`](../../../brain/projects/{{SLUG}}.md) も更新します。
+案件のCurrent / Decisions / Next / Openが変わる場合は、[`brain/projects/{{SLUG}}.md`](../../../../brain/projects/{{SLUG}}.md) も更新します。
 
 ## 記録形式
 

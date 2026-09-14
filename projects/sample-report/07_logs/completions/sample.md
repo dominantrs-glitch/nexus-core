@@ -12,8 +12,8 @@
   "source_snapshot": "f6605451acc05f1d9ad66f1faa421897b179b8cd",
   "artifacts": [{"path": "projects/sample-report/05_output/report.md", "role": "provisional"}],
   "sources": [
-    {"path": "projects/sample-report/goal.md", "basis": "source"},
-    {"path": "projects/sample-report/07_logs/decisions.md", "basis": "source"},
+    {"path": "projects/sample-report/03_context/docs/goal.md", "basis": "source"},
+    {"path": "projects/sample-report/07_logs/decisions/record.md", "basis": "source"},
     {"path": "projects/sample-report/03_context/docs/check.md", "basis": "test-result"}
   ]
 }
@@ -27,7 +27,7 @@ source_snapshotはこの公開用リポジトリの草案を含むコミット�
 
 ## 判断と理由
 
-[判断ログ](../decisions.md)のとおり、単純な文字情報の例なのでMarkdownを選んだ。
+[判断ログ](../decisions/record.md)のとおり、単純な文字情報の例なのでMarkdownを選んだ。
 実利用者の判断を再現したものではなく、サンプル作成者の判断である。
 
 ## 確認結果

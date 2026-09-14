@@ -5,8 +5,8 @@
 
 - [projects](projects/README.md)：現在地・現在の判断・次の行動・未解決事項。
 - [memory](memory/README.md)：本人が保存を希望した、再利用する記録。
-- [inbox](inbox.md)：保存が必要だが分類が決まらない項目。
-- [NOW](NOW.md)：Projectの先頭metadataから生成した一覧。手で編集しません。
+- [inbox](inbox/items.md)：保存が必要だが分類が決まらない項目。
+- [NOW](indexes/NOW.md)：Projectの先頭metadataから生成した一覧。手で編集しません。
 - [テンプレート](templates/README.md)：記録形式の見本。
 
 再開時は関連Project、必要なMemory、今回の資料の順に読みます。

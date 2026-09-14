@@ -51,12 +51,12 @@ Git状態確認は接続先がある場合に実行します。ZIP直後のremot
 | [brain/](brain/README.md) | 現在地・判断・Memoryの管理 |
 | [brain/projects/](brain/projects/README.md) | 各案件のCurrent / Decisions / Next / Open |
 | [brain/memory/](brain/memory/README.md) | 本人が保存を希望した、案件をまたいで使う記録 |
-| [brain/NOW.md](brain/NOW.md) | Projectから生成する表示専用一覧 |
+| [brain/indexes/NOW.md](brain/indexes/NOW.md) | Projectから生成する表示専用一覧 |
 | [projects/](projects/README.md) | 資料、作業物、成果物、コード、判断・完成記録 |
 | [brain/templates/](brain/templates/README.md) | 新規案件、Memory、完成記録のひな型 |
 | [brain/tools/](brain/docs/commands.md) | 作成・生成・検査のプログラム |
 
-フォルダの役割は[WORKSPACE_CONTRACT.md](WORKSPACE_CONTRACT.md)、保存と履歴の規則は[brain/AGENTS.md](brain/AGENTS.md)が正本です。
+フォルダの役割は[context/docs/workspace-contract.md](context/docs/workspace-contract.md)、保存と履歴の規則は[brain/AGENTS.md](brain/AGENTS.md)が正本です。
 
 ## AIに読ませる
 
@@ -74,9 +74,13 @@ URLを渡しただけで全ファイルが自動取得されるとは限りま�
 - [自分の環境へのコピーと設定](brain/docs/adoption.md)
 - [設計判断と切り出した範囲](brain/docs/design.md)
 - [記録工程](brain/docs/deliverable-recording.md)
-- [評価するための質問と手順](brain/retrieval_eval/README.md)
+- [評価するための質問と手順](brain/evaluations/README.md)
 - [確認結果と既知の限界](brain/docs/validation.md)
 
 この公開用コピーの第三者による導入・理解はまだ未検証です。
 同梱の自動検査が通っても、任意のAIが説明を正しく理解することや、判断記録が毎回残ることは保証しません。
 現段階では再配布・改変のライセンスを指定していません。まず構造の閲覧・評価を目的とする公開版です。
+
+フォルダを探すときは [名前と配置のガイド](brain/docs/folder-layout.md) を参照してください。
+
+今回の配置更新は [変更範囲・検証記録](logs/completions/2026-09-15-folder-layout.md) で確認できます。

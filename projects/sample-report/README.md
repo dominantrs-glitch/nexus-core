@@ -1,13 +1,13 @@
 # 架空の週次レポート
 
 これは公開版の構造を説明する架空案件です。実際の個人記録・業務資料ではありません。
-[草案と記録の入口](05_output/README.md)、[判断ログ](07_logs/decisions.md)、[確認結果](03_context/docs/check.md)を順に読めます。
+[草案と記録の入口](05_output/README.md)、[判断ログ](07_logs/decisions/record.md)、[確認結果](03_context/docs/check.md)を順に読めます。
 
 このフォルダーは `sample-report` の作業データ層です。案件のCurrent、Decisions、Next、Openの正本は [`brain/projects/sample-report.md`](../../brain/projects/sample-report.md) です。
 
-運用はリポジトリルートの [`WORKSPACE_CONTRACT.md`](../../WORKSPACE_CONTRACT.md) に従います。開始時は [goal.md](goal.md) と [03_context/README.md](03_context/README.md) を確認し、必要な場合だけ [03_context/context.md](03_context/context.md) と対応するProjectを開きます。
+運用はリポジトリルートの [`context/docs/workspace-contract.md`](../../context/docs/workspace-contract.md) に従います。開始時は [goal.md](03_context/docs/goal.md) と [03_context/README.md](03_context/README.md) を確認し、必要な場合だけ [03_context/context.md](03_context/docs/context.md) と対応するProjectを開きます。
 
-作業終了時は、再利用価値のある判断が生まれた場合だけ `07_logs/decisions.md` を更新します。単なる作業履歴は残しません。完成・引渡し・中断では [記録工程](../../brain/docs/deliverable-recording.md) に従います。
+作業終了時は、再利用価値のある判断が生まれた場合だけ `07_logs/decisions/record.md` を更新します。単なる作業履歴は残しません。完成・引渡し・中断では [記録工程](../../brain/docs/deliverable-recording.md) に従います。
 
 ## 初期構成
 
@@ -15,7 +15,7 @@
 - `03_context/`: AIと人間が最初に確認する要約・参照案内です。Current / Decisions / Nextの正本は重複せずProjectを参照します。
 - `04_work/`: 中間生成物、変換物、検証物、draft。
 - `05_output/`: 利用者に渡す最終成果物だけを置きます。
-- `07_logs/decisions.md`: 再利用したい判断理由を記録します。案件の現在地が変わる場合はProjectにも短く反映します。
+- `07_logs/decisions/record.md`: 再利用したい判断理由を記録します。案件の現在地が変わる場合はProjectにも短く反映します。
 
 `01_raw/`、`02_web/`、`08_archive/`、`09_skills/` は必要になったときだけ追加します。コード・設定・依存情報・起動ファイルは `06_app/` にまとめ、説明書は `03_context/docs/` に置きます。案件直下には入口ファイルと必要な番号付き分類だけを残します。
 

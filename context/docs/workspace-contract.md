@@ -13,7 +13,7 @@
 | --- | --- |
 | brain/projects | Current / Decisions / Next / Open |
 | brain/memory | 案件をまたいで使うFACT / DECISION / LESSON / HYPOTHESIS |
-| brain/inbox.md | 保存が必要だが分類を決められない項目 |
+| brain/inbox/items.md | 保存が必要だが分類を決められない項目 |
 | brain/docs・templates・tools・config | 説明書・ひな型・管理コード・配置設定 |
 | projects/案件/01_raw | 本人や顧客から受領した原本 |
 | projects/案件/02_web | 外部資料。URL・取得日・目的を併記 |
@@ -25,16 +25,16 @@
 | projects/案件/08_archive | 旧版。名前だけで不採用や失敗と決めない |
 | projects/案件/09_skills | 必要になった案件固有の反復手順 |
 
-案件直下はREADME・goal・MANIFESTなどの入口と必要な番号付き分類に絞る。
+案件直下はREADME・AGENTS・案内HTMLと必要な番号付き分類に絞る。goal.md・MANIFEST.md・context.mdは03_context/docs、判断記録は07_logs/decisionsへ置く。
 新規案件はinitializerを使う。不要な空分類は増やさない。
-共通の判断原則の空欄は[03_context/canonical-context.md](03_context/canonical-context.md)、本人判断との重要な差の記録先は[logs/correction-log.md](logs/correction-log.md)。通常の記録から自動更新しない。
+共通の判断原則の空欄は[context/docs/canonical-context.md](canonical-context.md)、本人判断との重要な差の記録先は[logs/records/correction-log.md](../../logs/records/correction-log.md)。通常の記録から自動更新しない。
 
 ## 保存と変更
 
 原本は本文を保全し、機密性に応じてGit管理可否を判断する。非公開データは公開版へ追加しない。
 移動時は参照・起動・import・生成先・自動実行を確認し、履歴を残す。
 Memoryの更新はbrain/AGENTS.mdに従う。旧判断は削除せずsupersededとして新しい判断と結ぶ。
-完成・中断の記録は[記録工程](brain/docs/deliverable-recording.md)に従う。
+完成・中断の記録は[記録工程](../../brain/docs/deliverable-recording.md)に従う。
 
 ## 確認
 
@@ -43,3 +43,9 @@ Memoryの更新はbrain/AGENTS.mdに従う。旧判断は削除せずsuperseded�
 Pythonツールは3.12以上とGitを前提とし、追加パッケージは使わない。
 テストの結果・データは04_work、コードは06_app/testsへ置く。
 __pycache__やruntimeを保存対象と混同しない。
+
+## 入口と末端の統一ルール（2026-09-15）
+
+本人の今回の指定により、分類の入口にはREADME・AGENTS・案内HTMLを置き、本体は用途別の下位フォルダへ分類する。基盤フォルダは小文字英語、複数語はハイフン。案件内は01_raw〜09_skillsを共通名とし、不要な空分類は作らない。
+
+具体的な構造、技術上の例外、点検範囲、既存パスの保全は [フォルダ配置ガイド](../../brain/docs/folder-layout.md) を参照する。過去資料の所在は [移動対応表](../../brain/config/layout-migration-2026-09-15.json) で追跡する。

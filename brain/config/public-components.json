@@ -4,17 +4,17 @@
     {
       "path": "brain/tools/init_project.py",
       "source_sha256": "85e4e47ca31212f0f846b5da29e6803c6d442bbca59656dd50ecde3c4d761e79",
-      "public_sha256": "db18f62d5819fd0f6af088705764352206608be7c90fea5482157ebd44e195a9"
+      "public_sha256": "d02b021d6de4f3cee884f26226d400b4bc9dfe0d0c934cff62a16dfca845616a"
     },
     {
       "path": "brain/tools/generate_now.py",
       "source_sha256": "778f5601dbdbdd13ce8deea5f77ee1715c83116ec6178720b08dc1ad2aa54071",
-      "public_sha256": "963e2d9ffacf16e88d1cde1e0370d028835792449715235b5b786e6f16cbf337"
+      "public_sha256": "1ef192497701729703e48e13036207ca57fd0838503576fae6e5cd22e27b2356"
     },
     {
       "path": "brain/tools/check_workspace_layout.py",
       "source_sha256": "e88279ac4a246e779cd796ad7abfc60378b146be8177a61d47e1981553725a86",
-      "public_sha256": "e8fc8a802ce1a528365b6e1570cae58cf15c833164fd84f07e18005827310ef5"
+      "public_sha256": "e4afd6b50e8242a883e45ead96a54a9f5b19d1f14bcf5e5b0cf4ab99f9e1ead7"
     },
     {
       "path": "brain/tools/check_git_session.py",
@@ -29,12 +29,12 @@
     {
       "path": "brain/tools/generate_project_guides.py",
       "source_sha256": "e8d488057ced3b2ec371c4e77e436c049c73b1b5cd74d87117361f083790c2ff",
-      "public_sha256": "309166db8f7b0809098b2e04d401d34872abed17620bb7999d918401ff2ddce8"
+      "public_sha256": "fa9767bbed84cf1ec294eb09e13c9cb85e3d2151a277e9d7de1515f5869113c1"
     },
     {
       "path": "brain/tools/test_init_project.py",
       "source_sha256": "067c5c2225e91a223ef51c766a2c9131338b5a97d59439c9660a72c1a8aea988",
-      "public_sha256": "77d8c215b85371799def1a8ff0c0098b14f7c238e1c2e1048f5069dc6a73f2cd"
+      "public_sha256": "4f6921f27d8745498c32458e85359ec8e1e0948e556ba951277771563ea3b4d4"
     },
     {
       "path": "brain/tools/test_generate_now.py",
@@ -44,7 +44,7 @@
     {
       "path": "brain/tools/test_workspace_layout.py",
       "source_sha256": "a1a9ed9843045cccdfbf00c332b71974251791c2b915b668b8ca8227c950f90a",
-      "public_sha256": "2023ccf81fe1daf831322eb204fa6315c3e65a6f630ae656f1c41fbd3e581673"
+      "public_sha256": "a5b4b5ace3a87e7e926b09aa30290a6a2dd7cd5e24174282e1f5cd6b1db110c4"
     },
     {
       "path": "brain/tools/test_check_git_session.py",
@@ -59,7 +59,7 @@
     {
       "path": "brain/templates/project-workspace/context-entry.md.template",
       "source_sha256": "5b5fc4ab7a430837cfda1db23fff5ac176b8c7a1e99ae23edf4b61c8932bd2da",
-      "public_sha256": "1a851a9d108284f5e1103472821fbc6ef51cb036ab8d0e5c7e109343cae5095a"
+      "public_sha256": "fed1c81b75e0a07ed41eaf26043fdc80e800b91ed22a01df0cd4f5a3f00e5e62"
     },
     {
       "path": "brain/templates/project-workspace/context.md.template",
@@ -69,7 +69,7 @@
     {
       "path": "brain/templates/project-workspace/decisions.md.template",
       "source_sha256": "6100488e630890e37b2b929448da5be958fee4bfea2bfc1d9f24f5a5271b4e9a",
-      "public_sha256": "c307d333123397a98e8335f6506f130fff88fdbf9d9cfa9b309a975d106cbb92"
+      "public_sha256": "4200dfe1a5799e971a38c99c148f765daf4724a75485e516975062096007d961"
     },
     {
       "path": "brain/templates/project-workspace/goal.md.template",
@@ -79,22 +79,23 @@
     {
       "path": "brain/templates/project-workspace/project.md.template",
       "source_sha256": "9f31d8bcc9fb55a52b8cbc8511f010402f00ea09d8302b4433010b84695eaa54",
-      "public_sha256": "e46dd2705d41f73379a1529cde1087edb2b02f2f29f6b0b4c89601645093077b"
+      "public_sha256": "c00fbd8e9812711e0ebc2cd08abd60f56b0ccbcdc8a59f0109dfd40f9a510a4b"
     },
     {
       "path": "brain/templates/project-workspace/README.md.template",
       "source_sha256": "265c68c21826c6d77c9123a400c3081a7bb9711ae1dea67635acf41bbdd54890",
-      "public_sha256": "56ab18a0663097159bd9d74141b544603a0b3f021844b93f947e2787d7ac8c40"
+      "public_sha256": "b1f94422d57b2050f2c7ca0782781443670e0d9964006abc7d2934750c729249"
     },
     {
-      "path": "brain/templates/completion-record.md.template",
+      "path": "brain/templates/records/completion-record.md.template",
       "source_sha256": "1f39f07e2554cefe506b82fa3872a16f24c214dc2de78e5699269d6784188008",
-      "public_sha256": "6c46ccb6f3468f5f4a0dd7de74ef0046d8488eca8cf4c9c986f050339db704c5"
+      "public_sha256": "b1eb185e94a6ac7fbc336b32e21d16b74a9fa0ef1f9f062ffb486f9c1fe316bf"
     },
     {
       "path": "brain/config/workspace-layout.json",
       "source_sha256": "cebcbec78121c40973404a5c4956447e770b1ab88e0dea6950e490e90b4d253c",
-      "public_sha256": "99838079b85ad88f1031b7d6bf32ca4fb67e577ce161a1a72ddff438812adf67"
+      "public_sha256": "7882a521bd206ac3c47e2d1d227eb705bb76086052860f5a736984c963ecb824"
     }
-  ]
+  ],
+  "hash_scope": "source_sha256 identifies the initially selected upstream component; public_sha256 identifies the current public file."
 }

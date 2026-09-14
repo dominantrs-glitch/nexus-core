@@ -21,7 +21,7 @@ show_in_now: true
 
 - 現在地・判断・Next・OpenはこのProjectを正本とし、`03_context/` は要約・参照案内として使う。Projectと同じ現在地を重複管理しない。
 - 01_raw / 02_webは根拠候補、04_work / 05_outputは原則非正本として扱う。
-- この例では単純な文字情報を扱うためMarkdownを選んだ。決定主体はサンプル作成者。実利用者の選好ではない。[判断ログ](../../projects/sample-report/07_logs/decisions.md)を参照。
+- この例では単純な文字情報を扱うためMarkdownを選んだ。決定主体はサンプル作成者。実利用者の選好ではない。[判断ログ](../../projects/sample-report/07_logs/decisions/record.md)を参照。
 
 ## Next
 

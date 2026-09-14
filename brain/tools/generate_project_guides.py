@@ -20,7 +20,7 @@ def render(project: Path) -> str:
 <title>{title} — フォルダ案内</title><style>body{{font-family:system-ui,sans-serif;max-width:900px;margin:40px auto;padding:20px;line-height:1.8;color:#243343}}table{{border-collapse:collapse;width:100%}}td{{padding:12px;border-bottom:1px solid #ddd}}a{{color:#185b82}}</style>
 <h1>{title}</h1><p><a href="README.md">最初に読むREADME・起動手順</a> ／ <a href="../README.md">全案件</a></p>
 <table>{rows}</table><p>必要な分類だけを使います。アプリの起動ファイルは06_app内、説明書は03_context/docs内にあります。</p>
-<p><a href="../../WORKSPACE_CONTRACT.md">配置・管理ルール</a> ／ <a href="../../brain/docs/quickstart.md">新規案件の作り方</a></p></html>
+<p><a href="../../context/docs/workspace-contract.md">配置・管理ルール</a> ／ <a href="../../brain/docs/quickstart.md">新規案件の作り方</a></p></html>
 '''
 
 def main() -> int:

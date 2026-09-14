@@ -57,9 +57,9 @@ def initialize(repo_root: Path, slug: str, title: str, workspace_root: str, opti
     project_path = repo_root / "brain" / "projects" / f"{slug}.md"
     workspace = repo_root / workspace_path
     readme_path = workspace / "README.md"
-    goal_path = workspace / "goal.md"
-    context_path = workspace / "03_context" / "context.md"
-    decisions_path = workspace / "07_logs" / "decisions.md"
+    goal_path = workspace / "03_context" / "docs" / "goal.md"
+    context_path = workspace / "03_context" / "docs" / "context.md"
+    decisions_path = workspace / "07_logs" / "decisions" / "record.md"
 
     expected = [project_path, readme_path, goal_path, context_path, decisions_path]
     if project_path.exists() and readme_path.exists():
@@ -79,18 +79,20 @@ def initialize(repo_root: Path, slug: str, title: str, workspace_root: str, opti
     workspace.mkdir(parents=True)
     project_path.write_text(render(read_template("project.md.template"), replacements), encoding="utf-8", newline="\n")
     readme_path.write_text(render(read_template("README.md.template"), replacements), encoding="utf-8", newline="\n")
+    goal_path.parent.mkdir(parents=True, exist_ok=True)
     goal_path.write_text(render(read_template("goal.md.template"), replacements), encoding="utf-8", newline="\n")
 
     created = [project_path, readme_path, goal_path]
     for layer in CORE_DIRECTORIES:
         layer_path = workspace / layer
-        layer_path.mkdir()
+        layer_path.mkdir(exist_ok=True)
         if layer == "03_context":
             guide = layer_path / "README.md"
             guide.write_text(render(read_template("context.md.template"), replacements), encoding="utf-8", newline="\n")
             context_path.write_text(render(read_template("context-entry.md.template"), replacements), encoding="utf-8", newline="\n")
             created.extend([guide, context_path])
         elif layer == "07_logs":
+            decisions_path.parent.mkdir(parents=True, exist_ok=True)
             decisions_path.write_text(render(read_template("decisions.md.template"), replacements), encoding="utf-8", newline="\n")
             created.append(decisions_path)
         else:

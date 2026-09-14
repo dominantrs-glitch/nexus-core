@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the disposable brain/NOW.md snapshot from Project metadata.
+"""Generate the disposable brain/indexes/NOW.md snapshot from Project metadata.
 
 Project files are the source of truth.  This script deliberately does not
 interpret their prose or update their metadata; it only renders the current
@@ -256,13 +256,13 @@ def render(projects: list[Project], root: Path) -> str:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Regenerate brain/NOW.md from Project metadata.")
+    parser = argparse.ArgumentParser(description="Regenerate brain/indexes/NOW.md from Project metadata.")
     parser.add_argument("--repo-root", type=Path, default=Path(__file__).resolve().parents[2])
     parser.add_argument("--check", action="store_true", help="fail instead of writing when NOW.md is stale")
     args = parser.parse_args()
     root = args.repo_root.resolve()
     project_dir = root / "brain" / "projects"
-    output = root / "brain" / "NOW.md"
+    output = root / "brain" / "indexes" / "NOW.md"
     try:
         projects = [load_project(path) for path in project_record_paths(project_dir)]
         content = render(projects, root)
@@ -272,13 +272,14 @@ def main() -> int:
 
     existing = output.read_text(encoding="utf-8") if output.exists() else None
     if existing == content:
-        print("brain/NOW.md is already current.")
+        print("brain/indexes/NOW.md is already current.")
         return 0
     if args.check:
-        print("brain/NOW.md is not current.", file=sys.stderr)
+        print("brain/indexes/NOW.md is not current.", file=sys.stderr)
         return 1
+    output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(content, encoding="utf-8", newline="\n")
-    print("Regenerated brain/NOW.md.")
+    print("Regenerated brain/indexes/NOW.md.")
     return 0
 
 

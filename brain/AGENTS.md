@@ -33,7 +33,7 @@ Project の **現在地** は、NOW が古い記録を表示し続けないよ�
 
 主な対象は、重要な意思決定と理由、確認済みの事実、再利用できる学び、失敗と回避策、本人固有の考え方、プロジェクトの現在地と次の行動、過去の判断を変えた履歴です。
 
-雑談、AI の回答全文、容易に再取得できる一般知識、一時だけ必要な情報、意味のない重複、保存価値が不明な内容は通常保存しません。分類または保存価値を安全に決められない場合だけ `inbox.md` に置きます。
+雑談、AI の回答全文、容易に再取得できる一般知識、一時だけ必要な情報、意味のない重複、保存価値が不明な内容は通常保存しません。分類または保存価値を安全に決められない場合だけ `inbox/items.md` に置きます。
 
 資格情報、個人を特定し得る詳細な医療・位置・予定・第三者情報、非公開の業務情報は必要最小限に要約します。秘密そのものを保存しません。
 
@@ -41,7 +41,7 @@ Project の **現在地** は、NOW が古い記録を表示し続けないよ�
 
 - 現在地、現在の決定、次の行動、未解決事項など、進行中案件を再開するための情報は `projects/<project-name>.md` に保存する。
 - 別の相談でも使う判断、事実、学び、仮説は `memory/YYYY-MM.md` に保存する。
-- 上のいずれかを決められないときだけ `inbox.md` に保存する。
+- 上のいずれかを決められないときだけ `inbox/items.md` に保存する。
 
 同じ内容を Project と Memory に重複保存しません。Project から重要な Memory ID を参照することはできます。
 
@@ -103,7 +103,7 @@ Correction Log は、AI の予測と本人の実際の判断に重要な差分�
 
 ## 案件内 Workspace Harness との関係
 
-案件フォルダーの一次資料・外部情報・途中成果物・最終成果物を扱うときは、リポジトリルートの `WORKSPACE_CONTRACT.md` に従う。開始時は `AGENTS.md → 関連Project → 必要なMemory → 案件構造 → 今回必要なraw / webだけ` の順に取得し、raw / web全体を毎回読まない。
+案件フォルダーの一次資料・外部情報・途中成果物・最終成果物を扱うときは、リポジトリルートの `context/docs/workspace-contract.md` に従う。開始時は `AGENTS.md → 関連Project → 必要なMemory → 案件構造 → 今回必要なraw / webだけ` の順に取得し、raw / web全体を毎回読まない。
 
 `brain/projects/<project>.md` はCurrent / Decisions / Next / Openの正本であり、案件内に同じ状態を持つ `context/` 正本を通常作らない。raw / webは根拠候補、work / outputは原則非正本である。AI生成したwork / outputの内容を、それだけを理由にProjectやMemoryのFACT・DECISIONへ昇格させず、一次資料、検証済み外部情報、実装・テスト結果、または本人確認へ戻って根拠を確認する。
 
@@ -119,4 +119,4 @@ Correction Log は、AI の予測と本人の実際の判断に重要な差分�
 
 これは依頼された作業の記録工程であり、会話全文や無関係な個人情報を保存する承認ではない。外部反映は依頼・事前承認の範囲で行う。Memoryへの保存意思、Canonical ContextとCorrection Logの保護は変更しない。既存資料を補完するときは未調査・根拠不足を区別する。理由・検証が不明な箇所を推測で埋めず、形式検査のPASSを全件記録済み・実機成功として報告しない。
 
-公開用の空の判断原則は [Canonical Context](../03_context/canonical-context.md)、差分記録は [Correction Log](../logs/correction-log.md) を参照する。本人の指示なしに中身を作らない。
+公開用の空の判断原則は [Canonical Context](../context/docs/canonical-context.md)、差分記録は [Correction Log](../logs/records/correction-log.md) を参照する。本人の指示なしに中身を作らない。

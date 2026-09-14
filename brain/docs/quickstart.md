@@ -15,7 +15,7 @@ brain/projects/my-first-project.mdとprojects/my-first-project/以下が作ら�
 
 ## 2. 目的と現在地
 
-projects/my-first-project/goal.mdへ今回の目的・範囲・完成条件を記入します。
+projects/my-first-project/03_context/docs/goal.mdへ今回の目的・範囲・完成条件を記入します。
 brain/projects/my-first-project.mdのCurrent / Decisions / Next / Openと先頭metadataを更新します。
 currentとnextは1行、statusはACTIVE / WAITING / STABLE / MAINTENANCE / DONE / ARCHIVED。
 未確認のものは未確認と書き、完成や本人受入を推測しません。
@@ -24,18 +24,18 @@ currentとnextは1行、statusはACTIVE / WAITING / STABLE / MAINTENANCE / DONE 
 python brain/tools/generate_now.py
 ```
 
-brain/NOW.mdに現在地と次の行動が表示されます。NOWを直接編集してはいけません。
+brain/indexes/NOW.mdに現在地と次の行動が表示されます。NOWを直接編集してはいけません。
 
 ## 3. 判断を残す
 
-projects/my-first-project/07_logs/decisions.mdへ、日付・決定主体・決定・理由・見送った案・根拠・適用条件を記録します。
+projects/my-first-project/07_logs/decisions/record.mdへ、日付・決定主体・決定・理由・見送った案・根拠・適用条件を記録します。
 本文が短くても構いません。考えていない代替案を後から作らないでください。
-案件をまたいで使うMemoryは、本人が「保存して」と明示した時に[Memory形式](../templates/memory.md.template)で記録します。
+案件をまたいで使うMemoryは、本人が「保存して」と明示した時に[Memory形式](../templates/records/memory.md.template)で記録します。
 
 ## 4. 成果物と確認
 
 途中のものは04_work、渡すものは05_outputへ置きます。成果物ごとに必要な確認を行い、対象版・方法・結果・未確認を記録します。
-[完成記録テンプレート](../templates/completion-record.md.template)を案件の07_logs/completions/へコピーします。
+[完成記録テンプレート](../templates/records/completion-record.md.template)を案件の07_logs/completions/へコピーします。
 traceブロック内のパスはリポジトリ直下からの相対パスです。source_snapshotは `git rev-parse HEAD` で得る、照合した実在コミットです。
 Gitにまだコミットがない場合は、承認したファイルだけを先にcommitして照合元を作ります。仮のSHAで埋めないでください。
 完成記録の5つの節を記入し、案件READMEまたは05_outputの案内からリンクします。

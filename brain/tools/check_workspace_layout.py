@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import fnmatch
 import json
+import re
 from pathlib import Path, PurePosixPath
 import subprocess
 
@@ -22,6 +23,15 @@ def violations(paths: list[str], config: dict) -> list[str]:
         if parts[0] not in config['root_directories']:
             problems.append(f'{value}: repository root directory has no assigned role')
             continue
+        for pattern, directories in config.get('navigation_directories', {}).items():
+            depth = len(PurePosixPath(pattern).parts)
+            if len(parts) <= depth or not fnmatch.fnmatchcase('/'.join(parts[:depth]), pattern):
+                continue
+            if len(parts) == depth + 1:
+                if parts[-1] not in config['navigation_files']:
+                    problems.append(f'{value}: navigation folder accepts only entrance files; classify the document below it')
+            elif parts[depth] not in directories:
+                problems.append(f'{value}: navigation subdirectory has no assigned role')
         if parts[0] == 'brain':
             if len(parts) == 2 and parts[1] not in config['brain_files']:
                 problems.append(f'{value}: place supporting documents in brain/docs or brain/indexes')
@@ -34,6 +44,8 @@ def violations(paths: list[str], config: dict) -> list[str]:
                 problems.append(f'{value}: projects/ must contain project directories, not loose files')
             continue
         project, entry = parts[1:3]
+        if not re.fullmatch(r'[a-z0-9][a-z0-9-]*', project) and project not in config.get('existing_project_names', {}):
+            problems.append(f'{value}: new project names must use lowercase letters, digits and hyphens')
         if len(parts) == 3:
             allowed = config['project_root_file_patterns'] + config['entrypoints'].get(project, [])
             if not any(fnmatch.fnmatchcase(entry, pattern) for pattern in allowed):
