@@ -1,0 +1,61 @@
+{
+  "root_files": [
+    "README.md",
+    "goal.md",
+    "WORKSPACE_CONTRACT.md",
+    ".gitignore",
+    ".gitattributes",
+    "AGENTS.md"
+  ],
+  "root_directories": [
+    ".github",
+    "03_context",
+    "brain",
+    "logs",
+    "projects",
+    "skills"
+  ],
+  "brain_files": [
+    "README.md",
+    "AGENTS.md",
+    "NOW.md",
+    "inbox.md",
+    "00_このフォルダについて.html"
+  ],
+  "brain_directories": [
+    "projects",
+    "memory",
+    "docs",
+    "indexes",
+    "config",
+    "tools",
+    "templates",
+    "retrieval_eval"
+  ],
+  "project_index_files": [
+    "README.md",
+    "00_このフォルダについて.html"
+  ],
+  "project_root_file_patterns": [
+    "README.md",
+    "AGENTS.md",
+    "goal.md",
+    "MANIFEST.md",
+    "00_このフォルダについて.html",
+    ".gitignore",
+    ".gitattributes"
+  ],
+  "project_directories": [
+    "01_raw",
+    "02_web",
+    "03_context",
+    "04_work",
+    "05_output",
+    "06_app",
+    "07_logs",
+    "08_archive",
+    "09_skills"
+  ],
+  "entrypoints": {},
+  "legacy_directories": {}
+}

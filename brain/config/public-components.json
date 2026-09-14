@@ -1,0 +1,100 @@
+{
+  "description": "Explicitly selected reusable components; no private records or source Git history.",
+  "files": [
+    {
+      "path": "brain/tools/init_project.py",
+      "source_sha256": "85e4e47ca31212f0f846b5da29e6803c6d442bbca59656dd50ecde3c4d761e79",
+      "public_sha256": "db18f62d5819fd0f6af088705764352206608be7c90fea5482157ebd44e195a9"
+    },
+    {
+      "path": "brain/tools/generate_now.py",
+      "source_sha256": "778f5601dbdbdd13ce8deea5f77ee1715c83116ec6178720b08dc1ad2aa54071",
+      "public_sha256": "9a6bbfa35fc2e0a3af9ddba506c08e5d9ec55525a99e81c0dbe1d8ac8e011f2c"
+    },
+    {
+      "path": "brain/tools/check_workspace_layout.py",
+      "source_sha256": "e88279ac4a246e779cd796ad7abfc60378b146be8177a61d47e1981553725a86",
+      "public_sha256": "e8fc8a802ce1a528365b6e1570cae58cf15c833164fd84f07e18005827310ef5"
+    },
+    {
+      "path": "brain/tools/check_git_session.py",
+      "source_sha256": "2cebb81c49eed8184d250d7176830403c343431865cc3cede6001da460428537",
+      "public_sha256": "7a9b13450ac20dc447ce8ab6477496699f323c0680d11043144f387864ea6416"
+    },
+    {
+      "path": "brain/tools/check_deliverable_records.py",
+      "source_sha256": "5397e5c28aa40bafcabfc74fc0bde8f8fa344cd0b7c6fc44a6ed9df21352bc0e",
+      "public_sha256": "178e013c2b63620ce3ea6a19903d7b242c131154f151f81c69b3a8021b57a9c9"
+    },
+    {
+      "path": "brain/tools/generate_project_guides.py",
+      "source_sha256": "e8d488057ced3b2ec371c4e77e436c049c73b1b5cd74d87117361f083790c2ff",
+      "public_sha256": "309166db8f7b0809098b2e04d401d34872abed17620bb7999d918401ff2ddce8"
+    },
+    {
+      "path": "brain/tools/test_init_project.py",
+      "source_sha256": "067c5c2225e91a223ef51c766a2c9131338b5a97d59439c9660a72c1a8aea988",
+      "public_sha256": "77d8c215b85371799def1a8ff0c0098b14f7c238e1c2e1048f5069dc6a73f2cd"
+    },
+    {
+      "path": "brain/tools/test_generate_now.py",
+      "source_sha256": "523d95eda05d3686a0710ede070e3dd184b6234ea4fbebb48fbd5bd0624af34c",
+      "public_sha256": "de580a5de788b695ccd15e769c05ff1b1fc0398fd99a73c29fe2b3a00923a3b2"
+    },
+    {
+      "path": "brain/tools/test_workspace_layout.py",
+      "source_sha256": "a1a9ed9843045cccdfbf00c332b71974251791c2b915b668b8ca8227c950f90a",
+      "public_sha256": "2023ccf81fe1daf831322eb204fa6315c3e65a6f630ae656f1c41fbd3e581673"
+    },
+    {
+      "path": "brain/tools/test_check_git_session.py",
+      "source_sha256": "fb2043f80e1e41f7f2942b0334979ca7f1706ae9753cce4efafa9a64277ed3b3",
+      "public_sha256": "d99ea79d4a7a005ac85fd42b30eae6a23cb04be6d4503c252604c4d0f7f57edd"
+    },
+    {
+      "path": "brain/tools/test_deliverable_records.py",
+      "source_sha256": "0a096ece02fbf19b0de3d9dad39540f41cc3fe63e5ee4bc3309bcbccf4c2ffeb",
+      "public_sha256": "e58a344562fd83ae5eddc26742e3c97a5d6a723f5cf5c974f53e91cd3cd484de"
+    },
+    {
+      "path": "brain/templates/project-workspace/context-entry.md.template",
+      "source_sha256": "5b5fc4ab7a430837cfda1db23fff5ac176b8c7a1e99ae23edf4b61c8932bd2da",
+      "public_sha256": "1a851a9d108284f5e1103472821fbc6ef51cb036ab8d0e5c7e109343cae5095a"
+    },
+    {
+      "path": "brain/templates/project-workspace/context.md.template",
+      "source_sha256": "af9a72de8d2cfa7b07f422d362192240f5552a53b679d6d67c2a8f64c10ae075",
+      "public_sha256": "6bb6d3d4831814f1504297518fb9f5c3d2347d2cd5b193e2cac8534e2c9922b1"
+    },
+    {
+      "path": "brain/templates/project-workspace/decisions.md.template",
+      "source_sha256": "6100488e630890e37b2b929448da5be958fee4bfea2bfc1d9f24f5a5271b4e9a",
+      "public_sha256": "c307d333123397a98e8335f6506f130fff88fdbf9d9cfa9b309a975d106cbb92"
+    },
+    {
+      "path": "brain/templates/project-workspace/goal.md.template",
+      "source_sha256": "eba331f8d6af653e405214a7cd60af43d0a7fe7819158d065e26fe1a82e46b1f",
+      "public_sha256": "b6fe59c0c847fa20d4aaa6e326c915018ec2a347c7c88888686fa8bd09317df4"
+    },
+    {
+      "path": "brain/templates/project-workspace/project.md.template",
+      "source_sha256": "9f31d8bcc9fb55a52b8cbc8511f010402f00ea09d8302b4433010b84695eaa54",
+      "public_sha256": "e46dd2705d41f73379a1529cde1087edb2b02f2f29f6b0b4c89601645093077b"
+    },
+    {
+      "path": "brain/templates/project-workspace/README.md.template",
+      "source_sha256": "265c68c21826c6d77c9123a400c3081a7bb9711ae1dea67635acf41bbdd54890",
+      "public_sha256": "56ab18a0663097159bd9d74141b544603a0b3f021844b93f947e2787d7ac8c40"
+    },
+    {
+      "path": "brain/templates/completion-record.md.template",
+      "source_sha256": "1f39f07e2554cefe506b82fa3872a16f24c214dc2de78e5699269d6784188008",
+      "public_sha256": "6c46ccb6f3468f5f4a0dd7de74ef0046d8488eca8cf4c9c986f050339db704c5"
+    },
+    {
+      "path": "brain/config/workspace-layout.json",
+      "source_sha256": "cebcbec78121c40973404a5c4956447e770b1ab88e0dea6950e490e90b4d253c",
+      "public_sha256": "99838079b85ad88f1031b7d6bf32ca4fb67e577ce161a1a72ddff438812adf67"
+    }
+  ]
+}

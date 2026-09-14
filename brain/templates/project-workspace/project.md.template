@@ -1,0 +1,31 @@
+---
+project: {{SLUG}}
+title: {{TITLE}}
+status: ACTIVE
+last_confirmed: {{DATE}}
+current: 案件を初期化済み。一次資料、要件、現在の判断は未確認
+next: 関連資料と要件を確認し、最初の実行可能な作業をProjectへ記録する
+waiting_for: none
+show_in_now: true
+watch_paths:
+  - {{WORKSPACE_PATH}}
+---
+
+# {{TITLE}}
+
+## Current
+
+案件フォルダーと最小の作業データ層を初期化した。一次資料、外部情報、要件、実装状況はまだ確認していない。
+
+## Decisions
+
+- 現在地・判断・Next・OpenはこのProjectを正本とし、`03_context/` は要約・参照案内として使う。Projectと同じ現在地を重複管理しない。
+- 01_raw / 02_webは根拠候補、04_work / 05_outputは原則非正本として扱う。
+
+## Next
+
+- goal.md、03_context、関連資料と今回の要件を確認し、必要な01_raw / 02_web / src / testsだけを選んで作業を開始する。
+
+## Open
+
+- 一次資料の保存場所、Git管理可否、最終成果物の受け渡し方法は未確認。

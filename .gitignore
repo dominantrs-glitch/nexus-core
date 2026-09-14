@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+!.env.example
+**/06_app/runtime/
+**/04_work/test_runs/
+**/04_work/tmp/
+.pytest_cache/

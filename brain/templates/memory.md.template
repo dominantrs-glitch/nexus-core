@@ -1,0 +1,16 @@
+## M-YYYYMMDD-NNN
+
+type: FACT | DECISION | LESSON | HYPOTHESIS
+status: active
+date: YYYY-MM-DD
+source: user-confirmed | verified-source | AI-hypothesis
+supersedes: none
+project: none
+
+### Summary
+
+保存する内容。
+
+### Reason
+
+本人の判断理由または確認根拠。出典と再利用条件を明記する。

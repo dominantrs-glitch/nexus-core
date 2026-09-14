@@ -1,0 +1,17 @@
+name: Validate foundation
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s brain/tools -p "test_*.py" -q
+      - run: python brain/tools/check_workspace_layout.py --include-untracked
+      - run: python brain/tools/check_deliverable_records.py
+      - run: python brain/tools/generate_now.py --check
+      - run: python brain/tools/check_public_package.py

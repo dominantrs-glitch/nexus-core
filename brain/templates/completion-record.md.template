@@ -1,0 +1,46 @@
+# 完成記録 — 成果物名・版
+
+```trace
+{
+  "schema": 1,
+  "project_record": "brain/projects/PROJECT.md",
+  "recorded_at": "YYYY-MM-DD",
+  "event_date": "unknown",
+  "review_state": "partial",
+  "evidence_state": "gaps",
+  "origin": "contemporaneous",
+  "source_snapshot": "REPLACE_WITH_FULL_COMMIT_SHA",
+  "artifacts": [
+    {
+      "path": "projects/PROJECT/05_output/FILE",
+      "role": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "path": "projects/PROJECT/07_logs/decisions.md",
+      "basis": "source"
+    }
+  ]
+}
+```
+
+## 成果物と完成範囲
+
+未記入
+
+## 判断と理由
+
+未記入
+
+## 確認結果
+
+未記入
+
+## 未確認・残件
+
+未記入
+
+## 調査範囲と出典
+
+未記入
