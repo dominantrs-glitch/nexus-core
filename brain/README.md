@@ -1,4 +1,4 @@
-# AI外部脳
+# ネクサスコア（公開版）— AI外部脳
 
 案件の現在地と、将来使う判断・事実をMarkdownで管理します。
 初回は[全体README](../README.md)、[運用規則](AGENTS.md)、[チュートリアル](docs/quickstart.md)を読みます。
